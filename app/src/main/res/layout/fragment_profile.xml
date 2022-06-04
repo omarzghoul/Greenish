@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profil2"
+
+    >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userPhotoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+
+            android:contentDescription="User Photo"
+            android:focusable="true"
+            android:src="@drawable/ic_group_144"
+
+             />
+
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/userPhotoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="User Name"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="normal|bold"
+        android:typeface="serif" />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/userNameTextView"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/pottedPlantsTextView"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_11"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="Plant: "
+
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:drawableStartCompat="@drawable/ic_plant"
+        app:drawableTint="@color/black"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></View>
+    <TextView
+        android:id="@+id/wateringPlantsTextView"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_11"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:text="Watering: "
+
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:drawableStartCompat="@drawable/ic_watering"
+         />
+</LinearLayout>
+</RelativeLayout>

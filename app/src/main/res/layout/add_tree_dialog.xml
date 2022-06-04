@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:elevation="12dp"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/round_2"
+    tools:context=".dialog.AddTreeDialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/round_3"
+        android:paddingVertical="20dp">
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <EditText
+                android:id="@+id/firstInput"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+
+                android:gravity="center"
+
+
+
+                android:background="@drawable/rectangle_11"
+
+                android:hint="Name of Tree"
+
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="#82A284"
+                android:typeface="serif" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topBar"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addressInfoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="#293462"
+
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addTreeButtonDialog"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#82A284"
+            android:contentDescription="TODO"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Add Tree" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
