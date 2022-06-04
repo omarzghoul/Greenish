@@ -1,4 +1,4 @@
-# Greenish00
+# Greenish
 
 
 <img src="https://user-images.githubusercontent.com/60323598/171467108-b5974138-4d40-437f-b0d2-11dc1d49d015.png"
